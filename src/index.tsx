@@ -6,7 +6,8 @@ import './index.css';
 import 'babel-polyfill';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Movie from '../packages/web-movie/src/index';
 
 import reducer from './reducers';
 const store = createStore(reducer);
@@ -14,7 +15,10 @@ const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Route path="/" component={App} />
+      <Switch>
+        <Route path="/movie" component={Movie} />
+        <Route path="/" component={App} />
+      </Switch>
     </Router>
   </Provider>,
   document.getElementById('root') as HTMLElement

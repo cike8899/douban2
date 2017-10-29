@@ -1,0 +1,14 @@
+{
+  "name": "douban-utils",
+  "version": "0.0.1",
+  "description": "douban-utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "bill",
+  "license": "MIT"
+}

@@ -6,13 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "douban",
-    "movie"
-  ],
+  "keywords": ["douban", "movie"],
   "author": "bill",
   "license": "MIT",
   "dependencies": {
-    "query-string": "^5.0.1"
+    "query-string": "^5.0.1",
+    "douban-utils": "0.0.1"
   }
 }

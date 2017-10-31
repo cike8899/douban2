@@ -1,4 +1,4 @@
-import * as React from 'react-dom';
+import * as React from 'react';
 const Subject = function() {
   return <div>subject</div>;
 };

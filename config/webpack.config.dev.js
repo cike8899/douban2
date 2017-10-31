@@ -121,13 +121,13 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: require.resolve('tslint-loader'),
         enforce: 'pre',
-        include: paths.appSrc
+        include: [paths.appSrc, paths.appPackages]
       },
       {
         test: /\.js$/,
         loader: require.resolve('source-map-loader'),
         enforce: 'pre',
-        include: paths.appSrc
+        include: [paths.appSrc, paths.appPackages]
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -148,7 +148,7 @@ module.exports = {
           // Compile .tsx?
           {
             test: /\.(ts|tsx)$/,
-            include: paths.appSrc,
+            include: [paths.appSrc, paths.appPackages],
             loader: require.resolve('ts-loader')
           },
           // "postcss" loader applies autoprefixer to our CSS.
